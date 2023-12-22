@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../jms/index.html">About Samuel</a></li>
+                <li><a href="application.html">Application Form</a></li>   
+            </ul>
+        </nav>
+    </header>
+    <h1>Application Form</h1>
+    <p>Fill in your details</p>
+    <form action="signup.php" method="post">
+        <p>
+            <label for="firstName">First Name</label><br/>
+            <input type="text" id="firstName" name="firstName" required minlength="3" placeholder="Enter first name">
+        </p>
+        <p>
+            <label for="lastName">Last Name</label><br/>
+            <input type="text" id="lastName" name="lastName" required minlength="3" placeholder="Enter last name">
+        </p>
+        <p>
+            <label for="gender">Gender</label><br/>
+            <select name="gender" id="">
+                <option value="" required="">Select gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="other">Other</option>
+                <option value="none">Rather not say</option>
+            </select>
+        </p>
+        <p>
+            <label for="dateofBirth">Date of Birth</label><br/>
+            <input type="date" id="date">
+        </p>
+        <p>
+            <label for="email">Email Address</label><br/>
+            <input type="email" id="email" required pattern="name@gmail.com" placeholder="Enter email address">
+        </p>
+        <p>
+            <label for="education">Educational Level</label><br/>
+            <select name="education" id="">
+                <option value="" required="">Select level of education</option>
+                <option value="Highschoolcert">High School</option>
+                <option value="Undergraduate">Undergraduate</option>
+                <option value="Postgraduate">Postgraduate</option>
+            </select>
+        </p>
+        <p>
+            <label for="country">Country</label><br/>
+            <select name="country" id="country">
+                <option value="" required="">Select your country</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="US">USA</option>
+                <option value="UK">United Kingdom</option>
+                <option value="Russia">Russia</option>
+                <option value="China">China</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Sweden">Sweden</option>
+                <option value="Ghana">Ghana</option>
+            </select>
+        </p>
+        <p>
+           <label for="state">State/City of Residence</label><br/>
+           <input type="text" id="state" placeholder="Enter your state of residence"> 
+        </p>
+        <p>
+            <label for="employment">Employment Status</label><br/>
+            <select name="employment" id="employment">
+                <option value="" required="">Select employment status</option>
+                <option value="Student">Student</option>
+                <option value="Unemployed">Unemployed</option>
+                <option value="Full-time">Employed(full-time)</option>
+                <option value="Part-time">Employed(part-time)</option>
+                <option value="Entrepreneur">Entrepreneur</option>
+            </select>
+        </p>
+        <p>
+            <label for="phoneNumber">Phone Number</label><br/>
+            <input type="tel" id="phoneNumber" placeholder="08154387000" required pattern="[0-9]{11}">
+        </p>
+        <p>
+            <label for="school">Choose School</label><br/>
+            <select name="school" id="school">
+                <option value="" required="">Select school</option>
+                <option value="engineering">School of Engineering</option>
+                <option value="product">School of Product</option>
+                <option value="data">School of Data</option>
+            </select>
+        </p>
+        <p>
+            <label for="course">Choose Course of Study</label><br/>
+            <select name="course" id="course">
+                <option value="" required="">Select course</option>
+                <option value="backend">Backend Engineering</option>
+                <option value="cloud">Cloud Engineering</option>
+                <option value="frontend">Frontend Engineering</option>
+                <option value="data">Data Science</option>
+                <option value="product">Product Management</option>
+                <option value="design">Product Design</option>
+            </select>
+        </p>
+        <p>
+            <label for="channel">How did you hear about us?</label><br/>
+            <select name="channel" id="channel">
+                <option value="" required="">Select channel</option>
+                <option value="twitter">Twitter</option>
+                <option value="family">Friends/Family</option>
+                <option value="others">Other channels</option>
+            </select>
+        </p>
+        <p>
+            <label for="code">Scholarship/Discount Code (Optional)</label><br/>
+            <input type="text" id="code" placeholder="Scholarship or student ID or discount code">
+        </p>
+
+        <h5>By clicking continue, I agree to <b><a href="#">Terms of Use</b></a> and acknowledge that I<br/>have read the <b><a href="#">Privacy Policy.</a></b></h5>
+        <input type="submit" value="Proceed">
+
+        <i><h5>Already have an account? <b><a href="./signin.html">Sign In</a></b>  </h5></i>
+    </form>
+    
+</body>
+</html>
